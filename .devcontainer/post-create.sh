@@ -35,6 +35,8 @@ if [[ "$CODESPACE_NAME" == dttest-* ]]; then
     # Testing finished. Destroy the codespace
     gh codespace delete --codespace "$CODESPACE_NAME" --force
 else
+
+    echo "doing nothing"
     # Your content here
     # TODO
 
@@ -47,3 +49,4 @@ else
     #     \"demo\": \"demo-PLACEHOLDER\",
     #     \"codespace.name\": \"$CODESPACE_NAME\"
     #   }"
+fi
